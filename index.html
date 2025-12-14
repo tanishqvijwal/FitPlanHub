@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitPlanHub - Simple Fitness Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <h1 class="logo">FitPlanHub</h1>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="plans.html">Plans</a>
+      <a href="trainers.html">Trainers</a>
+      <a href="dashboard.html" id="dashboard-link">Dashboard</a>
+      <a href="login.html" id="login-link">Login</a>
+      <a href="signup.html" id="signup-link">Signup</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h2>Your Fitness Journey Starts Here</h2>
+    <p>Find trainers, join fitness plans, and transform your health</p>
+    <a href="signup.html" class="btn">Get Started Free</a>
+  </div>
+</section>
+
+<section class="plans-preview">
+  <div class="container">
+    <h2>Popular Fitness Plans</h2>
+    <div id="plans-list"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2023 FitPlanHub</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  updateNavigation();
+  loadPlans();
+});
+</script>
+</body>
+</html>
